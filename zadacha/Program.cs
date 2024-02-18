@@ -3,6 +3,7 @@
 //При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
 
+
 Console.WriteLine("Введите размер массива: ");
             int n = int.Parse(Console.ReadLine()!);
             string[] StartArray=new string[n];
@@ -11,6 +12,8 @@ Console.WriteLine("Введите размер массива: ");
             {
                 StartArray[i] = Console.ReadLine()!; // заполнение массива
             }
+
+            //string[] StartArray = new string[] {"кот", "цветы", "456", "н1н1н1", "любовь", "1", "кто"}; - вариант с самостоятельным заполнением массива.
 
 string [] FinishArray = new string[StartArray.Length];
 Console.WriteLine( "Первоначальный массив:");

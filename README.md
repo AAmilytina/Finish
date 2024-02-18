@@ -12,3 +12,7 @@ for (int i = 0; i < n; i++)
     StartArray[i] = Console.ReadLine()!;
  }
 ```
+Вариант для ввода данных самостоятельно:
+```
+//string[] StartArray = new string[] {"кот", "цветы", "456", "н1н1н1", "любовь", "1", "кто"}; 
+```
