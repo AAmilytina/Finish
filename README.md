@@ -41,3 +41,20 @@ CheckArray(StartArray, FinishArray);
 ```
 Console.Clear();
 ```
+
+* Создаем метод формирования и вывода конечного массива, элементы которого будут состоять из элементов начального массива, но состоящие из одного/двух/трех символов:
+
+```
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+```
+* Вывод результата:
+```
+Console.WriteLine( "Массив из строк меньше, либо равных трем символам: ");
+PrintArray(FinishArray);
