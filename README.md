@@ -58,3 +58,9 @@ void PrintArray(string[] array)
 ```
 Console.WriteLine( "Массив из строк меньше, либо равных трем символам: ");
 PrintArray(FinishArray);
+```
+
+
+## Блок схема ## 
+
+![](shema.png)
