@@ -15,6 +15,16 @@ void CheckArray (string[] StartArray, string[] FinishArray)
         }
     }
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+
 Console.Clear();
 Console.WriteLine("Введите размер массива: ");
             int n = int.Parse(Console.ReadLine()!);
@@ -29,5 +39,7 @@ Console.WriteLine("Введите размер массива: ");
 
 string [] FinishArray = new string[StartArray.Length];
 Console.WriteLine( "Первоначальный массив:");
-
+PrintArray(StartArray);
 CheckArray(StartArray, FinishArray);
+Console.WriteLine( "Массив из строк меньше, либо равных трем символам: ");
+PrintArray(FinishArray);
