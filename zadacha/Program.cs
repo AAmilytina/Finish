@@ -2,8 +2,20 @@
 //либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. 
 //При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
+void CheckArray (string[] StartArray, string[] FinishArray)
+    {
+        int count = 0;
+        for(int i = 0; i <StartArray.Length; i++)
+        {
+            if(StartArray[i].Length <= 3)
+            {
+                FinishArray[count] = StartArray[i];
+                count++;
+            }
+        }
+    }
 
-
+Console.Clear();
 Console.WriteLine("Введите размер массива: ");
             int n = int.Parse(Console.ReadLine()!);
             string[] StartArray=new string[n];
@@ -17,3 +29,5 @@ Console.WriteLine("Введите размер массива: ");
 
 string [] FinishArray = new string[StartArray.Length];
 Console.WriteLine( "Первоначальный массив:");
+
+CheckArray(StartArray, FinishArray);

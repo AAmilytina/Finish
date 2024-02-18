@@ -16,3 +16,28 @@ for (int i = 0; i < n; i++)
 ```
 //string[] StartArray = new string[] {"кот", "цветы", "456", "н1н1н1", "любовь", "1", "кто"}; 
 ```
+
+* Создаем метод, перебирающий каждый элемент строчного массива, сравниваем количество символов элемента с заданным значением "3":
+
+```
+void CheckArray (string[] StartArray, string[] FinishArray)
+    {
+        int count = 0;
+        for(int i = 0; i <StartArray.Length; i++)
+        {
+            if(StartArray[i].Length <= 3)
+            {
+                FinishArray[count] = StartArray[i];
+                count++;
+            }
+        }
+    }
+```
+А также вызов этого метода:
+```
+CheckArray(StartArray, FinishArray);
+```
+*Для удобства добавим команду очистки консоли:*
+```
+Console.Clear();
+```
