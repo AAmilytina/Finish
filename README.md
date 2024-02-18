@@ -63,4 +63,4 @@ PrintArray(FinishArray);
 
 ## Блок схема ## 
 
-![](shema.png)
+![ ](shema.png)
